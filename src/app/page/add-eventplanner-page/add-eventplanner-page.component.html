@@ -1,0 +1,14 @@
+<h1 class="bg-danger-subtle text-black p-3 text-center">Add Eventplanner Page</h1>
+
+<div class="container d-flex justify-content-center custom-width">
+    <input placeholder="Enter your name" class="input" type="text" [(ngModel)]="eventplanner.name">
+    <input placeholder="Enter your Address" class="input" type="text"  [(ngModel)]="eventplanner.address">
+    <input placeholder="Enter your Email" class="input" type="text" [(ngModel)]="eventplanner.email">
+    <input placeholder="Enter your Contact" class="input" type="text" [(ngModel)]="eventplanner.contact">
+      
+</div>
+
+<div class="d-flex justify-content-center mt-3">
+    <button class="btn" (click)="addEventplanner()">Submit</button>
+</div>
+  

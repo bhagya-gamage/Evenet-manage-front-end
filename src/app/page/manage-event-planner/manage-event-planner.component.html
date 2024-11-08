@@ -1,0 +1,62 @@
+<h1 class="bg-danger-subtle text-red p-3 text-center">Manage EventPlanner Page</h1>
+
+<div class="container">
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Count</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Contact</th>
+        </tr>
+    
+        <tr *ngFor="let eventplanner of eventplannerList; index as i">
+            <td>{{i+1}}</td>
+            <td>{{eventplanner.id}}</td>
+            <td>{{eventplanner.name}}</td>
+            <td>{{eventplanner.address}}</td>
+            <td>{{eventplanner.email}}</td>
+            <td>{{eventplanner.contact}}</td>
+            <td><button class="btn btn-outline-danger" (click)="deleteEventplannerById(eventplanner.id)"><i class="bi bi-trash"></i></button></td>
+            <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="updateEventplanner(eventplanner)"><i class="bi bi-pencil-square"></i></button></td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Update Event Planner</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Id</label>
+              <input type="text" class="form-control" [(ngModel)]="eventplannerTemp.id" id="recipient-name" disabled="true">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Name</label>
+              <input type="text" class="form-control" [(ngModel)]="eventplannerTemp.name" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Address</label>
+              <input type="text" class="form-control" [(ngModel)]="eventplannerTemp.address" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Email</label>
+              <input type="text" class="form-control" [(ngModel)]="eventplannerTemp.email" id="recipient-name">
+            </div>
+           
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="saveCustomer()" data-bs-dismiss="modal">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>

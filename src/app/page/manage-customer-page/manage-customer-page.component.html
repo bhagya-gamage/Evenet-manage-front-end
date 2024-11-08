@@ -1,0 +1,73 @@
+<h1 class="bg-danger-subtle text-red p-3 text-center">Manage Customer Page</h1>
+
+<h1>{{customerList[0].name}}</h1>
+
+<div class="container">
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Count</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Contact</th>
+
+        </tr>
+    
+        <tr *ngFor="let customer of customerList; index as i">
+            <td>{{i+1}}</td>
+            <td>{{customer.custId}}</td>
+            <td>{{customer.custName}}</td>
+            <td>{{customer.custAddress}}</td>
+            <td>{{customer.custEmail}}</td>
+            <td>{{customer.custContact}}</td>
+            <td><button class="btn btn-outline-danger" (click)="deleteCustomerById(customer.custId)"><i class="bi bi-trash"></i></button></td>
+            <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="updateCustomer(customer)"><i class="bi bi-pencil-square"></i></button></td>
+        </tr>
+    </table>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Update Customer</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Id</label>
+            <input type="text" class="form-control" [(ngModel)]="customerTemp.custId" id="recipient-name" disabled="true">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Name</label>
+            <input type="text" class="form-control" [(ngModel)]="customerTemp.custName" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Address</label>
+            <input type="text" class="form-control" [(ngModel)]="customerTemp.custAddress" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Email</label>
+            <input type="text" class="form-control" [(ngModel)]="customerTemp.custEmail" id="recipient-name">
+          </div>
+         
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="saveCustomer()" data-bs-dismiss="modal">Update Customer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

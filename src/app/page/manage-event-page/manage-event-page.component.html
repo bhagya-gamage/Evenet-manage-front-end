@@ -1,0 +1,88 @@
+<h1 class="bg-danger-subtle text-red p-3 text-center">Manage Event Page</h1>
+
+<div class="container">
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>Count</th>
+            <th>ID</th>
+            <th>Event Name</th>
+            <th>Event Category</th>
+            <th>Venue</th>
+            <th>No Of Tickets</th>
+            <th>Ticket Price</th>
+            <th>Event Date</th>
+            <th>Event image</th>
+
+        </tr>
+    
+        <tr *ngFor="let event of eventList; index as i">
+            <td>{{i+1}}</td>
+            <td>{{event.id}}</td>
+            <td>{{event.eventName}}</td>
+            <td>{{event.eventCategory}}</td>
+            <td>{{event.venue}}</td>
+            <td>{{event.noOfTickets}}</td>
+            <td>{{event.ticketPrice}}</td>
+            <td>{{event.date}}</td>
+            <td><img [src]="event.eventImage" 
+                alt="image" 
+                style="max-width: 100px; height: auto;">
+            </td>
+            <td><button class="btn btn-outline-danger" (click)="deleteEventById(event.id)"><i class="bi bi-trash"></i></button></td>
+            <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="updateEvent(event)"><i class="bi bi-pencil-square"></i></button></td>
+        </tr>
+    </table>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Update Event</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Id</label>
+              <input type="text" class="form-control" [(ngModel)]="eventTemp.custId" id="recipient-name" disabled="true">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Event Name</label>
+              <input type="text" class="form-control" [(ngModel)]="eventTemp.eventName" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Event Category</label>
+              <input type="text" class="form-control" [(ngModel)]="eventTemp.eventCategory" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Event Venue</label>
+              <input type="text" class="form-control" [(ngModel)]="eventTemp.venue" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">No Of Tickets</label>
+              <input type="text" class="form-control" [(ngModel)]="eventTemp.noOfTickets" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Ticket Price</label>
+              <input type="text" class="form-control" [(ngModel)]="eventTemp.ticketPrice" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Event Date</label>
+              <input type="text" class="form-control" [(ngModel)]="eventTemp.date" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Image</label>
+              <input type="text" class="form-control" [(ngModel)]="eventTemp.image" id="recipient-name">
+            </div>
+           
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="saveEvent()" data-bs-dismiss="modal">Update Event</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

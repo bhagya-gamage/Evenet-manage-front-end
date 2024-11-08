@@ -1,0 +1,17 @@
+.sidebar {
+    width: 280px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .sidebar.collapsed {
+        transform: translateX(-100%);
+    }
+}
