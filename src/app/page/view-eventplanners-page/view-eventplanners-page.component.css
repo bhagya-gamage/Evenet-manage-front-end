@@ -171,35 +171,58 @@
     }
 }
 
-/* From Uiverse.io by vinodjangid07 */ 
-.bin-button {
+
+.search-container {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 15px;
-    background-color: rgb(255, 95, 95);
+    margin: 20px 0;
+  }
+  
+  .search-wrapper {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+  .search-button {
+    padding: 12px 25px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
     cursor: pointer;
-    border: 3px solid rgb(255, 201, 201);
-    transition-duration: 0.3s;
+    transition: all 0.3s ease;
   }
-  .bin-bottom {
-    width: 15px;
+  
+  .search-button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
   }
-  .bin-top {
-    width: 17px;
-    transform-origin: right;
-    transition-duration: 0.3s;
+  
+  .search-button i {
+    font-size: 16px;
   }
-  .bin-button:hover .bin-top {
-    transform: rotate(45deg);
-  }
-  .bin-button:hover {
-    background-color: rgb(255, 0, 0);
-  }
-  .bin-button:active {
-    transform: scale(0.9);
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .search-wrapper {
+        width: 90%;
+    }
   }
   

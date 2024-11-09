@@ -1,0 +1,101 @@
+/* From Uiverse.io by suleymanlaarabidev */ 
+.card {
+    width: 190px;
+    height: 254px;
+    background: rgb(103, 225, 255);
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+    background: rgb(103, 151, 255);
+  }
+  
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  
+  .card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }
+  
+
+  /* gtfjjhgjg */
+
+  .features-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;  /* Space between cards */
+    padding: 80px;
+    min-height: 100vh;
+}
+
+/* Keep your existing card styles */
+.card {
+    width: 200px;  /* Fixed width for each card */
+    /* ... rest of your existing card styles ... */
+}
+
+/* For responsive design */
+@media (max-width: 992px) {
+    .features-section {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+.first-content,
+.second-content {
+    display: flex;
+    justify-content: center;  /* Horizontal center */
+    align-items: center;      /* Vertical center */
+    text-align: center;       /* Center text content */
+    width: 100%;
+    height: 100%;
+}
+
+.first-content span,
+.second-content span {
+    text-align: center;
+    width: 100%;             /* Ensure span takes full width */
+    padding: 0 10px;         /* Add some padding for better spacing */
+}
+

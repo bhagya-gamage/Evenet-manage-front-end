@@ -27,4 +27,13 @@ export class AddEventplannerPageComponent {
     
 }
 
+
+  searchTerm: string = '';
+
+  searchEvents() {
+      // Implement your search logic here
+      console.log('Searching for:', this.searchTerm);
+  }
+
+
 }

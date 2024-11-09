@@ -36,4 +36,14 @@ export class AddEvntPageComponent {
     }
 }
 
+eventCategories = [
+  { value: 'Corporate', label: 'Corporate' },
+  { value: 'Technology', label: 'Technology' },
+  { value: 'Entertainment', label: 'Entertainment' },
+  { value: 'Educational', label: 'Educational' },
+  { value: 'Conference', label: 'Conference' },
+  { value: 'Party', label: 'Party' },
+];
+
+
 }

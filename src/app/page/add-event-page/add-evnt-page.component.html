@@ -1,8 +1,16 @@
-<h1 class="bg-danger-subtle text-black p-3 text-center">Add Event Page</h1>
+<h1 class="bg-danger-subtle text-black p-3 text-center">Add Event Page</h1><br><br>
 
 <div class="container d-flex justify-content-center custom-width">
     <input placeholder="Enter event name" class="input" type="text" [(ngModel)]="event.eventName">
-    <input placeholder="Enter event category" class="input" type="text"  [(ngModel)]="event.eventCategory">
+    <select class="input" [(ngModel)]="event.eventCategory">
+        <option value="" disabled selected>Select event category</option>
+        <option value="Corporate">Corporate</option>
+        <option value="Technology">Technology</option>
+        <option value="Entertainment">Entertainment </option>
+        <option value="Educational">Educational</option>
+        <option value="Conference">Conference</option>
+        <option value="Party">Party</option>
+    </select>
     <input placeholder="Enter venue" class="input" type="text" [(ngModel)]="event.venue">
     <input placeholder="Enter no of tickets" class="input" type="text" [(ngModel)]="event.noOfTickets">
     <input placeholder="Enter ticket price" class="input" type="text" [(ngModel)]="event.ticketPrice">

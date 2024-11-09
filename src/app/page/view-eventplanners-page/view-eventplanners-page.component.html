@@ -1,0 +1,57 @@
+<h1 class="bg-danger-subtle text-red p-3 text-center">View Event Planners Page</h1>
+
+<div class="search-container" >
+    <div class="search-wrapper">
+        <input 
+            type="text" 
+            class="search-input" 
+            placeholder="Search event planners..."
+            [(ngModel)]="searchTerm"
+            (keyup.enter)="searchEventplanners()">
+        <button class="search-button" (click)="searchEventplanners()">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+</div>
+
+<div class="planners-container">
+   
+    <div class="table-container">
+        <table class="planners-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Specialization</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let eventplanner of eventplannerList;">
+                    <td>
+                        <div class="planner-name">{{eventplanner.name}}</div>
+                    </td>
+                    <td>
+                        <div class="planner-name">{{eventplanner.address}}</div>
+                    </td>
+                    <td>{{eventplanner.email}}</td>
+                    <td>{{eventplanner.contact}}</td>
+                    <td>
+                        <div class="rating">
+                            <!-- <i class="fas fa-star" *ngFor="let star of [1,2,3,4,5]"
+                               [class.active]="star <= planner.rating"></i> -->
+                        </div>
+                    </td>
+                    <td>
+                        <!-- <span class="status" [class.active]="planner.isActive">
+                            {{planner.isActive ? 'Active' : 'Inactive'}}
+                        </span> -->
+                    </td>
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
