@@ -4,7 +4,6 @@
             <h2>Welcome Back</h2>
             <p>Please login to your account</p>
         </div>
-        <!-- (ngSubmit)="onSubmit()" -->
         <form class="login-form" >
             <div class="form-group">
                 <div class="input-group">
@@ -62,8 +61,12 @@
                 </div>
             </div>
 
+           
             <p class="signup-link">
-                Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign up</a>
+                Don't have an account? 
+                <a routerLink="app-add-eventplanner-page" class="signup-link-item">Sign up as an Event Planner</a>
+                <span class="separator"> | </span> 
+                <a routerLink="app-add-customer-page" class="signup-link-item">Sign up as a Customer</a>
             </p>
         </form>
     </div>
@@ -71,18 +74,4 @@
 
 
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Register as a</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-       
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" routerLink="app-add-eventplanner-page">Event Planner</button>
-          <button type="button" class="btn btn-primary" routerLink="app-add-customer-page">Customer</button>
-        </div>
-      </div>
-    </div>
-  </div>
+ 

@@ -1,17 +1,55 @@
-<h1 class="bg-danger-subtle text-black p-3 text-center">Add Eventplanner Page</h1><br><br>
+<div class="bgimag">
+  <h1 class="bg-danger-subtle text-black p-3 text-center">Add Eventplanner Page</h1><br><br>
 
 
 
-<div class="container d-flex justify-content-center custom-width">
+  <div class="container d-flex justify-content-center custom-width">
     <input placeholder="Enter your name" class="input" type="text" [(ngModel)]="eventplanner.name">
-    <input placeholder="Enter your Address" class="input" type="text"  [(ngModel)]="eventplanner.address">
+    <input placeholder="Enter your Address" class="input" type="text" [(ngModel)]="eventplanner.address">
     <input placeholder="Enter your Email" class="input" type="text" [(ngModel)]="eventplanner.email">
     <input placeholder="Enter your Password" class="input" type="password" [(ngModel)]="eventplanner.password">
+    <input placeholder="Specialization" class="input" type="text" [(ngModel)]="eventplanner.specialization">
+    <input placeholder="Years of experience" class="input" type="text" [(ngModel)]="eventplanner.experience">
     <input placeholder="Enter your Contact" class="input" type="text" [(ngModel)]="eventplanner.contact">
-      
-</div>
 
-<div class="d-flex justify-content-center mt-3">
+  </div>
+
+  <div class="d-flex justify-content-center mt-3">
     <button class="btn" (click)="addEventplanner()">Submit</button>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+        <p><i class="fas fa-envelope"></i> info&#64;eventmanager.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Event Street, City</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Book Event</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Event Manager. All rights reserved.</p>
+    </div>
+  </footer>
 </div>
-  

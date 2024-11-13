@@ -15,6 +15,8 @@ export class AddEventplannerPageComponent {
     name:"",
     address:"",
     email:"",
+    specialization:"",
+    experience:"",
     contact:""
   };
 
@@ -32,6 +34,9 @@ export class AddEventplannerPageComponent {
 
   searchEvents() {
       // Implement your search logic here
+      this.http.get("http://localhost:8080/event/search-by-id/",this.eventplanner).subscribe(data=>{
+        alert("Event Founded!!!");
+      })
       console.log('Searching for:', this.searchTerm);
   }
 

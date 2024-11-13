@@ -176,7 +176,7 @@
     background: #1DA1F2;
 }
 
-.signup-link {
+/* .signup-link {
     text-align: center;
     margin-top: 20px;
     color: #666;
@@ -186,10 +186,31 @@
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
-}
+} */
 
 @media (max-width: 480px) {
     .login-card {
         padding: 20px;
     }
+}
+
+
+.signup-link {
+    font-size: 16px; 
+    color: #333; 
+}
+
+.signup-link-item {
+    color: #007bff; 
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.signup-link-item:hover {
+    text-decoration: underline; 
+    cursor: pointer; 
+}
+
+.separator {
+    margin: 0 10px; 
 }

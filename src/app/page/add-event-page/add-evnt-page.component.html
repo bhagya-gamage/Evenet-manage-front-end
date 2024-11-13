@@ -1,26 +1,61 @@
-<h1 class="bg-danger-subtle text-black p-3 text-center">Add Event Page</h1><br><br>
+<div class="bgimag">
+  <h1 class="bg-danger-subtle text-black p-3 text-center">Add Event Page</h1><br><br>
 
-<div class="container d-flex justify-content-center custom-width">
+  <div class="container d-flex justify-content-center custom-width">
     <input placeholder="Enter event name" class="input" type="text" [(ngModel)]="event.eventName">
     <select class="input" [(ngModel)]="event.eventCategory">
-        <option value="" disabled selected>Select event category</option>
-        <option value="Corporate">Corporate</option>
-        <option value="Technology">Technology</option>
-        <option value="Entertainment">Entertainment </option>
-        <option value="Educational">Educational</option>
-        <option value="Conference">Conference</option>
-        <option value="Party">Party</option>
+      <option value="" disabled selected>Select event category</option>
+      <option value="Corporate">Corporate</option>
+      <option value="Technology">Technology</option>
+      <option value="Entertainment">Entertainment </option>
+      <option value="Educational">Educational</option>
+      <option value="Conference">Conference</option>
+      <option value="Party">Party</option>
     </select>
     <input placeholder="Enter venue" class="input" type="text" [(ngModel)]="event.venue">
     <input placeholder="Enter no of tickets" class="input" type="text" [(ngModel)]="event.noOfTickets">
     <input placeholder="Enter ticket price" class="input" type="text" [(ngModel)]="event.ticketPrice">
-    <input placeholder="Enter event date" class="input" type="date"  [(ngModel)]="event.date">
-    <input placeholder="Enter image" class="input" type="file"  accept="image/*" (change)="onFileSelected($event)">      
-</div>
+    <input placeholder="Enter event date" class="input" type="date" [(ngModel)]="event.date">
+    <input placeholder="Enter image" class="input" type="file" accept="image/*" (change)="onFileSelected($event)">
+  </div>
 
 
-<div class="d-flex justify-content-center mt-3">
+  <div class="d-flex justify-content-center mt-3">
     <button class="btn" (click)="addEvent()">Submit</button>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+        <p><i class="fas fa-envelope"></i> info&#64;eventmanager.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Event Street, City</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Book Event</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Event Manager. All rights reserved.</p>
+    </div>
+  </footer>
 </div>
-
-

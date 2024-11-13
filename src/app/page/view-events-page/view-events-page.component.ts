@@ -28,7 +28,10 @@ export class ViewEventsPageComponent {
   }
 
   searchEvents() {
-      // Implement your search logic here
-      console.log('Searching for:', this.searchTerm);
-  }
+    // this.http.get(`http://localhost:8080/event/search-by-id/${id}`,this.eventList).subscribe(data=>{
+    //   alert("Event Founded!!!");
+    // })
+    console.log('Searching for:', this.searchTerm);
+}
+
 }

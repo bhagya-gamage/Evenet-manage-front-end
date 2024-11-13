@@ -10,6 +10,7 @@ import { ViewEventplannersPageComponent } from './page/view-eventplanners-page/v
 import { LogingPageComponent } from './page/loging-page/loging-page.component';
 import { ViewEventsPageComponent } from './page/view-events-page/view-events-page.component';
 import { SelectionPageComponent } from './page/selection-page/selection-page.component';
+import { SelectionPageCardComponent } from './common/selection-page-card/selection-page-card.component';
 
 export const routes: Routes = [
     {
@@ -54,6 +55,24 @@ export const routes: Routes = [
     },
     {
         path:"app-selection-page",
-        component:SelectionPageComponent
+        component:SelectionPageComponent,
+        children:[
+            {
+                path:"",
+                component:SelectionPageCardComponent
+            },
+            {
+                path:"app-add-evnt-page",
+                component:AddEvntPageComponent
+            },
+            {
+                path:"app-manage-event-page",
+                component:ManageEventPageComponent
+            },
+            {
+                path:"app-manage-customer-page",
+                component:ManageCustomerPageComponent
+            }
+        ]
     }
 ];
