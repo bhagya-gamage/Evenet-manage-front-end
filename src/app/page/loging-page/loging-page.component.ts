@@ -13,8 +13,6 @@ import { Router, RouterLink } from '@angular/router';
 })
 
 export class LogingPageComponent {
- 
-
   loginData = {
     email: '',
     password: '',
@@ -42,16 +40,12 @@ export class LogingPageComponent {
 
   onSubmit() {
     console.log('Login submitted:', this.loginData);
-
     const foundPlanner = this.eventplannerList.find((eventplanner: any) =>
       eventplanner.email === this.loginData.email && eventplanner.password === this.loginData.password
     );
-
     if (foundPlanner) {
       alert('Login successful.');
       this.router.navigate(["/app-selection-page"]);
-
-
     } else {
       alert('Invalid email or password.Try again.');
     }

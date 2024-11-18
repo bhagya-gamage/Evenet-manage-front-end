@@ -10,10 +10,10 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './manage-customer-page.component.html',
   styleUrl: './manage-customer-page.component.css'
 })
+
 export class ManageCustomerPageComponent {
 
     public customerList:any=[];
-
     constructor(private http:HttpClient){
       this.loadTable();
     }
@@ -46,4 +46,5 @@ export class ManageCustomerPageComponent {
         alert("Customer Updated!!!");
       })
     }
+
 }

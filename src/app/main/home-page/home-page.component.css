@@ -54,7 +54,7 @@ button {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #282936;
+    background: #abb0f9;
     border-radius: 1.625rem;
    }
    
@@ -96,7 +96,7 @@ button {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: #282936;
+    color: #ffffff;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
@@ -113,7 +113,7 @@ button {
    }
    
    button:hover .button-text {
-    color: #fff;
+    color: #000000;
    }
 
    
@@ -126,7 +126,7 @@ button {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #f8f9fa;
+    background-color: #535c64;
   }
   
   .feature-card {
@@ -376,16 +376,18 @@ button {
   position: relative;
   border: none;
   background: transparent;
-  --stroke-color: #0000007c;
+  --stroke-color: #ffffff7c;
   --ani-color: rgba(95, 3, 244, 0);
-  --color-gar: linear-gradient(90deg,#021c27,#f441a5,#534c7f,#03a9f4);
+  --color-gar: linear-gradient(90deg,#ffffff,#ff5ab7,#ffffff,#534c7f,#ffffff,#03a9f4,#f1ff55);
   letter-spacing: 3px;
-  font-size: 5em;
+  font-size: 9em;
   font-family: "Arial";
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 1px var(--stroke-color);
+  -webkit-text-stroke: 3px var(--stroke-color);
   cursor: pointer;
+
+ 
 }
 
 .front-text {
@@ -405,7 +407,7 @@ button {
 
 .button:hover .front-text {
   width: 100%;
-  border-bottom: 2px solid #0b232f;
+  border-bottom: 2px solid #ffffff;
   -webkit-text-stroke: 1px var(--ani-color);
 }
 
@@ -425,3 +427,23 @@ button {
 
 
 
+/* .features-section{
+  background-image: url('/event4.jpg'); 
+  background-blend-mode: overlay;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 100vh; 
+  color: white; 
+}  */
+
+.hero-section{
+  background-image: url('/event4.jpg'); 
+  background-blend-mode: overlay;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  /* min-height: 100vh;  */
+  color: white; 
+  background-color: #333;
+} 

@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { FormControl, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Router, RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-add-eventplanner-page',
   standalone: true,
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule,CommonModule,RouterLink],
   templateUrl: './add-eventplanner-page.component.html',
   styleUrl: './add-eventplanner-page.component.css'
 })

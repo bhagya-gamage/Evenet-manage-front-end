@@ -289,3 +289,13 @@ margin-right: 4px;
 .card:hover {
 rotate: 6deg;
 }
+
+.abc{
+  background-image: url('/event4.jpg'); 
+  background-blend-mode: overlay;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 100vh; 
+  color: white; 
+} 

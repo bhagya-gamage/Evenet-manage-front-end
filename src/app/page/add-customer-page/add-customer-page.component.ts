@@ -2,11 +2,13 @@ import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormsModule } from '@angular/forms';
+import { Router, RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-add-customer-page',
   standalone: true,
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule,CommonModule,RouterLink],
   templateUrl: './add-customer-page.component.html',
   styleUrl: './add-customer-page.component.css'
 })

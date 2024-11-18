@@ -9,11 +9,35 @@ import { ViewEventplannersPageComponent } from './page/view-eventplanners-page/v
 import { LogingPageComponent } from './page/loging-page/loging-page.component';
 import { ViewEventsPageComponent } from './page/view-events-page/view-events-page.component';
 import { SelectionPageComponent } from './page/selection-page/selection-page.component';
+import { EntertainmentPageComponent } from './page/entertainment-page/entertainment-page.component';
+import { CoporatePageComponent } from './page/coporate-page/coporate-page.component';
+import { EducationalPageComponent } from './page/educational-page/educational-page.component';
+import { TechnologyPageComponent } from './page/technology-page/technology-page.component';
+import { PartyPageComponent } from './page/party-page/party-page.component';
+import { ConferencePageComponent } from './page/conference-page/conference-page.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,AddCustomerPageComponent,ManageCustomerPageComponent,NavBarComponent,AddEventplannerPageComponent,HomePageComponent,ViewEventplannersPageComponent,LogingPageComponent,ViewEventsPageComponent,SelectionPageComponent],
+  imports: [RouterOutlet,
+    AddCustomerPageComponent,
+    ManageCustomerPageComponent,
+    NavBarComponent,
+    AddEventplannerPageComponent,
+    HomePageComponent,
+    ViewEventplannersPageComponent,
+    LogingPageComponent,
+    ViewEventsPageComponent,
+    SelectionPageComponent,
+    EntertainmentPageComponent,
+    CoporatePageComponent,
+    EntertainmentPageComponent,
+    CoporatePageComponent,
+    EducationalPageComponent,
+    TechnologyPageComponent,
+    PartyPageComponent,
+    ConferencePageComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
