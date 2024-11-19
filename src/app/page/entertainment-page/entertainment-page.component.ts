@@ -23,9 +23,9 @@ export class EntertainmentPageComponent {
   }
 
   loadTable(){
-      this.http.get("http://localhost:8080/event/get-all").subscribe(data=>{
-        console.log(data);
-        this.eventList=data;
+      this.http.get("http://localhost:8080/event/getAllEventsByCategory/Entertainment").subscribe(Entertainment=>{
+        console.log(Entertainment);
+        this.eventList=Entertainment;
       })
   }
 
@@ -36,4 +36,11 @@ export class EntertainmentPageComponent {
     console.log('Searching for:', this.searchTerm);
 }
 
+bookEvent() {
+  // Implement your booking logic here
+  alert('Booking functionality to be implemented!');
 }
+
+}
+
+

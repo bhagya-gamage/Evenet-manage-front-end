@@ -22,9 +22,9 @@ export class CoporatePageComponent {
   }
 
   loadTable(){
-      this.http.get("http://localhost:8080/event/get-all").subscribe(data=>{
-        console.log(data);
-        this.eventList=data;
+      this.http.get("http://localhost:8080/event/getAllEventsByCategory/Corporate").subscribe(Corporate=>{
+        console.log(Corporate);
+        this.eventList=Corporate;
       })
   }
 

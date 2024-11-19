@@ -23,9 +23,9 @@ export class ConferencePageComponent {
   }
 
   loadTable(){
-      this.http.get("http://localhost:8080/event/get-all").subscribe(data=>{
-        console.log(data);
-        this.eventList=data;
+      this.http.get("http://localhost:8080/event/getAllEventsByCategory/Conference").subscribe(Conference=>{
+        console.log(Conference);
+        this.eventList=Conference;
       })
   }
 

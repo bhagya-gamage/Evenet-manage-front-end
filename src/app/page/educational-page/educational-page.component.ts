@@ -22,9 +22,9 @@ export class EducationalPageComponent {
   }
 
   loadTable(){
-      this.http.get("http://localhost:8080/event/get-all").subscribe(data=>{
-        console.log(data);
-        this.eventList=data;
+      this.http.get("http://localhost:8080/event/getAllEventsByCategory/Educational").subscribe(Educational=>{
+        console.log(Educational);
+        this.eventList=Educational;
       })
   }
 

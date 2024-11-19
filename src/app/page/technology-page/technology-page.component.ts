@@ -23,9 +23,9 @@ export class TechnologyPageComponent {
   }
 
   loadTable(){
-      this.http.get("http://localhost:8080/event/get-all").subscribe(data=>{
-        console.log(data);
-        this.eventList=data;
+      this.http.get("http://localhost:8080/event/getAllEventsByCategory/Technology").subscribe(Technology=>{
+        console.log(Technology);
+        this.eventList=Technology;
       })
   }
 
