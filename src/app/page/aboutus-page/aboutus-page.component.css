@@ -4,7 +4,7 @@
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    min-height: 100vh; 
+    height: 100vh; 
     color: white; 
     background-color: #333;
   } 
@@ -12,8 +12,8 @@
   .footer {
     background-color: #333;
     color: white;
-    padding: 40px 0 20px;
-    margin-top: 50px;
+    padding: 20px  40px;
+    /* margin-top: 50px; */
   }
   
   .footer-content {
@@ -99,3 +99,61 @@
     }
   }
   
+
+ 
+.about-us-text {
+    font-size: 16px; /* Font size for the paragraph */
+    line-height: 1.5; /* Line height for better readability */
+    color: #ffffff; /* Text color */
+}
+
+
+.about-us-container {
+  margin: 20px auto; /* Center the container with auto margins */
+  padding: 20px; /* Add padding */
+  background-color: #333; /* Dark background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 800px; /* Limit the width for better readability */
+  text-align: center; /* Center text */
+}
+
+
+
+.hero-section {
+  background-image: url('/assets/images/hero-background.jpg'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  height: 300px; /* Set a height for the hero section */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+}
+
+.hero-content h1 {
+  font-size: 3rem; /* Font size for the main title */
+  margin: 0; /* Remove default margin */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for depth */
+  font-family: 'Arial', sans-serif; /* Change font family */
+}
+
+.hero-content p {
+  font-size: 1.5rem; /* Font size for the subtitle */
+  margin-top: 10px; /* Space above the subtitle */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+  font-family: 'Arial', sans-serif; /* Change font family */
+}
+
+
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1; /* Place overlay below text */
+}
