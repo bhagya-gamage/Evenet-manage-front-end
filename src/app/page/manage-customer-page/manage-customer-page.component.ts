@@ -29,8 +29,7 @@ export class ManageCustomerPageComponent {
         console.log(id);
         this.http.delete(`http://localhost:8080/customer/delete-by-id/${id}`).subscribe(data=>{
           alert("Customer Deleted !!!");
-          this.loadTable();
-        })
+         })
     }
 
     public customerTemp:any={}

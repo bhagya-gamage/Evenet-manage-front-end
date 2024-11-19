@@ -18,6 +18,7 @@ import { TechnologyPageComponent } from './page/technology-page/technology-page.
 import { EducationalPageComponent } from './page/educational-page/educational-page.component';
 import { ConferencePageComponent } from './page/conference-page/conference-page.component';
 import { PartyPageComponent } from './page/party-page/party-page.component';
+import { AboutusPageComponent } from './page/aboutus-page/aboutus-page.component';
 
 export const routes: Routes = [
     {
@@ -111,6 +112,10 @@ export const routes: Routes = [
     {
         path: "app-party-page",
         component: PartyPageComponent
+    },
+    {
+        path:"app-aboutus-page",
+        component:AboutusPageComponent
     }
 
 
