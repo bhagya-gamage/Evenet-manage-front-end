@@ -314,4 +314,13 @@ rotate: 6deg;
   background-repeat: no-repeat; 
   min-height: 100vh; 
   color: white; 
+  background-color:#333;
 } 
+
+.topic-background {
+  background: radial-gradient(circle, #4fa9bf17, #0501256e); /* Radial gradient from the center */
+  padding: 20px;
+  border-radius: 0px;
+  color: white; /* Adjust text color for contrast */
+  text-align: center; /* Center-align text */
+}

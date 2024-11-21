@@ -3,17 +3,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #333;
+    /* background: #333; */
     padding: 20px;
 }
 
 .login-card {
-    background: rgb(175, 175, 175);
+    background: rgba(92, 92, 92, 0.7);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     width: 100%;
     max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+
 }
 
 .login-header {
@@ -22,13 +24,13 @@
 }
 
 .login-header h2 {
-    color: #333;
+    color: #131313;
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .login-header p {
-    color: #666;
+    color: #242424;
     font-size: 1rem;
 }
 
@@ -45,7 +47,7 @@
 .input-group i {
     position: absolute;
     left: 15px;
-    color: #666;
+    color: #515151;
 }
 
 .input-group input {
@@ -81,7 +83,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #666;
+    color: #282828;
 }
 
 .forgot-password {
@@ -93,7 +95,7 @@
 .login-button {
     width: 100%;
     padding: 15px;
-    background: #313b45;
+    background: #2d2d2d;
     color: white;
     border: none;
     border-radius: 10px;
@@ -107,7 +109,7 @@
 }
 
 .login-button:hover {
-    background: #222757;
+    background: #3b909d;
     transform: translateY(-2px);
 }
 
@@ -117,7 +119,7 @@
 }
 
 .social-login p {
-    color: #666;
+    color: #101010;
     margin-bottom: 15px;
     position: relative;
 }
@@ -197,7 +199,7 @@
 
 .signup-link {
     font-size: 16px; 
-    color: #333; 
+    color: #171717; 
 }
 
 .signup-link-item {
@@ -214,3 +216,14 @@
 .separator {
     margin: 0 10px; 
 }
+
+.bgimg{
+    background-image: url('/event4.jpg'); 
+    background-blend-mode: overlay;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    color: white; 
+    background-color: #333;
+  } 
