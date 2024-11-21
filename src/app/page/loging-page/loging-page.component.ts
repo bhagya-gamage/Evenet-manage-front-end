@@ -38,12 +38,56 @@ export class LogingPageComponent {
     this.showPassword = !this.showPassword;
   }
 
+
   onSubmit() {
     console.log('Login submitted:', this.loginData);
-    const foundPlanner = this.eventplannerList.find((eventplanner: any) =>
-      eventplanner.email === this.loginData.email && eventplanner.password === this.loginData.password
-    );
+    let loginSuccessful = false; 
+    let eventPlannerId: any;
+
+    for (let i = 0; i < this.eventplannerList.length; i++) {
+        const eventplanner = this.eventplannerList[i];
+        if (eventplanner.email === this.loginData.email && eventplanner.password === this.loginData.password) {
+            loginSuccessful = true; 
+            eventPlannerId = eventplanner.id; 
+            break; 
+        }
+    }
+
+    if (loginSuccessful) {
+        if (eventPlannerId) {
+            localStorage.setItem("eventplannerid", eventPlannerId); 
+        }
+        alert('Login successful.');
+        this.router.navigate(["/app-selection-page"]);
+    } else {
+        alert('Invalid email or password. Try again.');
+    }
+}
+
+ /* onSubmit() {
+    console.log('Login submitted:', this.loginData);
+    // const foundPlanner = this.eventplannerList.find((eventplanner: any) =>
+    //   eventplanner.email === this.loginData.email && eventplanner.password === this.loginData.password
+    // );
+
+
+
+ for (let i = 0; i < this.eventplannerList.length; i++) {
+        const eventplanner = this.eventplannerList[i];
+        if (eventplanner.email === this.loginData.email && eventplanner.password === this.loginData.password) {
+            loginSuccessful = true; // Set flag to true if credentials match
+            // Optionally, you can store the event planner ID in local storage
+            // localStorage.setItem("eventplannerid", eventplanner.id);
+            break; // Exit the loop once a match is found
+        }
+    }
+
+
+   
+
+
     if (foundPlanner) {
+      // localStorage.setItem("eventplannerid",)
       alert('Login successful.');
       this.router.navigate(["/app-selection-page"]);
     } else {
@@ -52,4 +96,5 @@ export class LogingPageComponent {
   }
 
   
+*/
 }

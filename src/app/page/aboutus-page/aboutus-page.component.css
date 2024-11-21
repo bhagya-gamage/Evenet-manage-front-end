@@ -1,5 +1,5 @@
 .abc{
-    background-image: url('/event6.jpg'); 
+    background-image: url('/event4.jpg'); 
     background-blend-mode: overlay;
     background-size: cover; 
     background-position: center; 
@@ -102,47 +102,47 @@
 
  
 .about-us-text {
-    font-size: 16px; /* Font size for the paragraph */
-    line-height: 1.5; /* Line height for better readability */
-    color: #ffffff; /* Text color */
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: #ffffff; 
+    text-align: justify;
 }
 
 
 .about-us-container {
-  margin: 20px auto; /* Center the container with auto margins */
-  padding: 20px; /* Add padding */
-  background-color: #333; /* Dark background for contrast */
-  border-radius: 8px; /* Rounded corners */
-  max-width: 800px; /* Limit the width for better readability */
-  text-align: center; /* Center text */
+  margin: 20px auto; 
+  padding: 20px;
+  border-radius: 8px; 
+  max-width: 800px; 
+  text-align: center; 
 }
 
 
 
 .hero-section {
-  background-image: url('/assets/images/hero-background.jpg'); /* Replace with your image path */
-  background-size: cover; /* Cover the entire section */
-  background-position: center; /* Center the image */
-  height: 300px; /* Set a height for the hero section */
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  color: white; /* Text color */
-  text-align: center; /* Center text */
+  /* background-image: url('/assets/images/hero-background.jpg');  */
+  background-size: cover; 
+  background-position: center; 
+  height: 300px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  color: white; 
+  text-align: center; 
 }
 
 .hero-content h1 {
-  font-size: 3rem; /* Font size for the main title */
-  margin: 0; /* Remove default margin */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for depth */
-  font-family: 'Arial', sans-serif; /* Change font family */
+  font-size: 3rem; 
+  margin: 0; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  font-family: 'Arial', sans-serif; 
 }
 
 .hero-content p {
-  font-size: 1.5rem; /* Font size for the subtitle */
-  margin-top: 10px; /* Space above the subtitle */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
-  font-family: 'Arial', sans-serif; /* Change font family */
+  font-size: 1.5rem; 
+  margin-top: 10px; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+  font-family: 'Arial', sans-serif; 
 }
 
 
@@ -154,6 +154,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-  z-index: 1; /* Place overlay below text */
+  background: rgba(0, 0, 0, 0.5); 
+  color: rgb(255, 255, 255);
+  z-index: 1; 
 }

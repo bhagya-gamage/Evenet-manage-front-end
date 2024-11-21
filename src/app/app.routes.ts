@@ -19,6 +19,7 @@ import { EducationalPageComponent } from './page/educational-page/educational-pa
 import { ConferencePageComponent } from './page/conference-page/conference-page.component';
 import { PartyPageComponent } from './page/party-page/party-page.component';
 import { AboutusPageComponent } from './page/aboutus-page/aboutus-page.component';
+import { AdminManagePageComponent } from './page/admin-manage-page/admin-manage-page.component';
 
 export const routes: Routes = [
     {
@@ -116,6 +117,10 @@ export const routes: Routes = [
     {
         path:"app-aboutus-page",
         component:AboutusPageComponent
+    },
+    {
+        path:"app-admin-manage-page",
+        component:AdminManagePageComponent
     }
 
 

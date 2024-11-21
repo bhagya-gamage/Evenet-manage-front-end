@@ -16,6 +16,7 @@ import { TechnologyPageComponent } from './page/technology-page/technology-page.
 import { PartyPageComponent } from './page/party-page/party-page.component';
 import { ConferencePageComponent } from './page/conference-page/conference-page.component';
 import { AboutusPageComponent } from './page/aboutus-page/aboutus-page.component';
+import { AdminManagePageComponent } from './page/admin-manage-page/admin-manage-page.component';
 
 @Component({
   selector: 'app-root',
@@ -38,7 +39,8 @@ import { AboutusPageComponent } from './page/aboutus-page/aboutus-page.component
     TechnologyPageComponent,
     PartyPageComponent,
     ConferencePageComponent,
-    AboutusPageComponent
+    AboutusPageComponent,
+    AdminManagePageComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
