@@ -1,4 +1,3 @@
-/* From Uiverse.io by eslam-hany */ 
 .container {
   position: relative;
   display: flex ;
@@ -60,7 +59,6 @@
 }
 
 
-/* From Uiverse.io by ShrinilDhorda */ 
 .btn {
   font-size: 1.2rem;
   padding: 1rem 2.5rem;
@@ -111,7 +109,6 @@ select.input:focus {
   box-shadow: 0 0 0 2px rgba(26, 32, 39, 0.25);
 }
 
-/* Style for the placeholder option */
 select.input option[value=""][disabled] {
   color: #1f1f1f;
 }
@@ -206,7 +203,6 @@ select.input option[value=""][disabled] {
   }
 }
 
-/* From Uiverse.io by Pravins01 */ 
 .card {
 position: relative;
 width: 190px;
@@ -253,8 +249,6 @@ text-transform: capitalize;
 font-weight: 700;
 }
 
-
-/* From Uiverse.io by gharsh11032000 */ 
 .card {
 width: 320px;
 height: 350px;

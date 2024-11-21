@@ -80,23 +80,21 @@
   
   .nav-item:hover {
     background: #3b485686;
-    color: white !important;  /* Force white color on hover */
+    color: white !important; 
     transform: translateY(-2px);
   }
   
   .nav-item.active {
     background: #007bff;
-    color: white !important;  /* Force white color when active */
+    color: white !important; 
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
   }
   
-  /* Also ensure icons change to white */
   .nav-item:hover i,
   .nav-item.active i {
     color: white;
   }
 
-  /* Responsive Design */
   @media (max-width: 768px) {
     .nav-container {
       flex-direction: column;

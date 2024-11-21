@@ -88,8 +88,6 @@ export const routes: Routes = [
         path: "app-category-page",
         component: CategoryPageComponent
     },
-
-  
     {
         path: "app-entertainment-page",
         component: EntertainmentPageComponent

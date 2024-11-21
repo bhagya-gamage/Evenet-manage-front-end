@@ -6,7 +6,7 @@
     background-repeat: no-repeat; 
     height: 100vh; 
     color: white; 
-    background-color: #333;
+    background-color: #232323;
   } 
 
   .footer {
@@ -102,7 +102,7 @@
 
  
 .about-us-text {
-    font-size: 16px; 
+    font-size: 22px; 
     line-height: 1.5; 
     color: #ffffff; 
     text-align: justify;
@@ -129,10 +129,11 @@
   align-items: center;
   color: white; 
   text-align: center; 
+  font-size: 35px;
 }
 
 .hero-content h1 {
-  font-size: 3rem; 
+  font-size: 4rem; 
   margin: 0; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
   font-family: 'Arial', sans-serif; 
@@ -147,7 +148,7 @@
 
 
 
-.hero-section::before {
+/* .hero-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -157,4 +158,4 @@
   background: rgba(0, 0, 0, 0.5); 
   color: rgb(255, 255, 255);
   z-index: 1; 
-}
+} */

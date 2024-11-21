@@ -219,7 +219,6 @@
     font-size: 16px;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .search-wrapper {
         width: 90%;

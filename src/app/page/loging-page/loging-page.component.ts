@@ -39,32 +39,6 @@ export class LogingPageComponent {
   }
 
 
-//   onSubmit() {
-//     console.log('Login submitted:', this.loginData);
-//     let loginSuccessful = false; 
-//     let eventPlannerId: any;
-
-//     for (let i = 0; i < this.eventplannerList.length; i++) {
-//         const eventplanner = this.eventplannerList[i];
-//         if (eventplanner.email === this.loginData.email && eventplanner.password === this.loginData.password) {
-//             loginSuccessful = true; 
-//             eventPlannerId = eventplanner.id; 
-//             break; 
-//         }
-//     }
-
-//     if (loginSuccessful) {
-//         if (eventPlannerId) {
-//             localStorage.setItem("eventplannerid", eventPlannerId); 
-//         }
-//         alert('Login successful.');
-//         this.router.navigate(["/app-selection-page"]);
-//     } else {
-//         alert('Invalid email or password. Try again.');
-//     }
-// }
-
-
 onSubmit() {
   console.log('Login submitted:', this.loginData);
   let loginSuccessful = false; 

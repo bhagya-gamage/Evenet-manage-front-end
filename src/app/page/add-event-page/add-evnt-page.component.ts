@@ -19,8 +19,8 @@ export class AddEvntPageComponent {
     venue:"",
     noOfTickets:"",
     ticketPrice:"",
-    date:"",
-    image:""
+    date:""
+    // image:""
   };
 
   constructor(private http:HttpClient){

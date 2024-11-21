@@ -14,7 +14,7 @@
                 <th>No Of Tickets</th>
                 <th>Ticket Price</th>
                 <th>Event Date</th>
-                <th>Event image</th>
+                <!-- <th>Event image</th> -->
                 <th>Delete</th>
                 <th>Update</th>
               </tr>
@@ -29,10 +29,10 @@
               <td>{{event.noOfTickets}}</td>
               <td>{{event.ticketPrice}}</td>
               <td>{{event.date}}</td>
-              <td><img [src]="event.eventImage" 
+              <!-- <td><img [src]="event.eventImage" 
                   alt="image" 
                   style="max-width: 100px; height: auto;">
-              </td>
+              </td> -->
               <!-- <td><button class="btn btn-outline-danger" (click)="deleteEventById(event.id)"><i class="bi bi-trash"></i></button></td> -->
                <td>
                 <button class="bin-button" (click)="deleteEventById(event.id)">
