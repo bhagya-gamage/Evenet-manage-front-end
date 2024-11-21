@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class ManageEventPageComponent {
   public eventList:any=[];
-  private eventPlannerId: any = localStorage.getItem("eventplannerid"); // Retrieve ID from local storage
+  private eventPlannerId: any = localStorage.getItem("eventplannerid"); 
 
 
   constructor(private http:HttpClient){
@@ -25,6 +25,8 @@ export class ManageEventPageComponent {
       this.http.get(`http://localhost:8080/event/getAllEventsByEventPlanner/${this.eventPlannerId}`).subscribe(data=>{
         console.log(data);
         this.eventList=data;
+        console.log(this.eventPlannerId);
+        
       })
   }
 

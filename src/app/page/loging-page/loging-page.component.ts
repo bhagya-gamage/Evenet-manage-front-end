@@ -79,6 +79,7 @@ onSubmit() {
       if (eventplanner.email === this.loginData.email && eventplanner.password === this.loginData.password) {
         loginSuccessful = true; 
         eventPlannerId = eventplanner.id; 
+        
         break; 
       }
     }

@@ -11,7 +11,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   styleUrl: './add-evnt-page.component.css'
 })
 export class AddEvntPageComponent {
+  
   public event:any={
+    eventPlannerId:"",
     eventName:"",
     eventCategory:"",
     venue:"",
@@ -21,7 +23,9 @@ export class AddEvntPageComponent {
     image:""
   };
 
-  constructor(private http:HttpClient){}
+  constructor(private http:HttpClient){
+    this.event.eventPlannerId=localStorage.getItem("eventplannerid");
+  }
 
   public addEvent(){
     this.http.post("http://localhost:8080/event/add-event",this.event).subscribe((data)=>{
