@@ -1,8 +1,8 @@
-.planners-container {
+/* .planners-container {
     padding: 30px;
-    background-color: #f8f9fa;
+    background-color: #010322;
     min-height: 100vh;
-}
+} */
 
 .header-section {
     display: flex;
@@ -172,7 +172,7 @@
 }
 
 
-.search-container {
+/* .search-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -202,8 +202,8 @@
   
   .search-button {
     padding: 12px 25px;
-    background: #007bff;
-    color: white;
+    background: #abb0f9;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -211,7 +211,7 @@
   }
   
   .search-button:hover {
-    background: #0056b3;
+    background: #3b909d;
     transform: translateY(-2px);
   }
   
@@ -223,12 +223,13 @@
     .search-wrapper {
         width: 90%;
     }
-  }
+  } */
 
 
   .abc{
     /* background-image: url('/event4.jpg');  */
-    background-color: #333;
+    /* background-color: #333; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Gradient overlay with image */
     background-blend-mode: overlay;
     background-size: cover; 
     background-position: center; 
@@ -237,3 +238,10 @@
     color: white; 
   } 
   
+  .topic-background {
+    background: radial-gradient(circle, #0501256e,#4fa9bf17); /* Radial gradient from the center */
+    padding: 20px;
+    border-radius: 10px;
+    color: white; /* Adjust text color for contrast */
+    text-align: center; /* Center-align text */
+  }

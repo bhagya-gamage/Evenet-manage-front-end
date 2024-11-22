@@ -446,7 +446,7 @@
   
 
   .topic-background {
-    background: radial-gradient(circle, rgba(219, 221, 222, 0.441), rgba(5, 1, 37, 0.713)); /* Radial gradient with transparency */
+    background: radial-gradient(circle, rgb(255, 255, 255), rgba(5, 1, 37, 0.713)); /* Radial gradient with transparency */
     padding: 20px;
     border-radius: 0px;
     color: rgb(0, 0, 0); /* Adjust text color for contrast */

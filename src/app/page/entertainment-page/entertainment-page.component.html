@@ -1,6 +1,8 @@
-<h1 class="bg-danger-subtle text-red p-3 text-center">View Event Page</h1>
+<div class="abc" style="background: linear-gradient(to right, rgb(38, 38, 68),lightblue);">
 
-<div class="search-container">
+    <h1 class="topic-background">Entertainment Events</h1>
+
+    <!-- <div class="search-container">
     <div class="search-wrapper">
         <input 
             type="text" 
@@ -12,31 +14,25 @@
             <i class="fas fa-search"></i>
         </button>
     </div>
-</div>
+</div> -->
 
-
-
-<div class="planners-container">
-  
-    <div class="planners-container">
-  
-        <div class="table-container">
-            <table class="planners-table">
-                <thead>
-                    <tr>
-                      <th>Count</th>
-                      <th>ID</th>
-                      <th>Event Name</th>
-                      <th>Event Category</th>
-                      <th>Venue</th>
-                      <th>No Of Tickets</th>
-                      <th>Ticket Price</th>
-                      <th>Event Date</th>
-                      <!-- <th>Event image</th> -->
-                    </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let event of eventList; index as i">
+    <div class="table-container">
+        <table class="planners-table">
+            <thead>
+                <tr>
+                    <th>Count</th>
+                    <th>ID</th>
+                    <th>Event Name</th>
+                    <th>Event Category</th>
+                    <th>Venue</th>
+                    <th>No Of Tickets</th>
+                    <th>Ticket Price</th>
+                    <th>Event Date</th>
+                    <!-- <th>Event image</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let event of eventList; index as i">
                     <td>{{i+1}}</td>
                     <td>{{event.id}}</td>
                     <td>{{event.eventName}}</td>
@@ -49,14 +45,13 @@
                         alt="image" 
                         style="max-width: 100px; height: auto;">
                     </td> -->
-                      </tr>
-                </tbody>
-            </table>
+                </tr>
+            </tbody>
+        </table>
 
-            <div class="button-container">
-                <button class="book-button" (click)="bookEvent()">Book Here</button>
-            </div>
-            
-        </div>
-      </div>
+        <!-- <div class="button-container">
+        <button class="book-button" (click)="bookEvent()">Book Here</button>
+    </div> -->
+
+    </div>
 </div>
