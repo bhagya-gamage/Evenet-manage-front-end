@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import Swal from 'sweetalert2'; 
 
 @Component({
   selector: 'app-manage-event-page',
@@ -33,7 +34,7 @@ export class ManageEventPageComponent {
   deleteEventById(id:any){
       console.log(id);
       this.http.delete(`http://localhost:8080/event/delete-by-id/${id}`).subscribe(data=>{
-        alert("Event Deleted !!!");
+        this.alertDelete();
         this.loadTable();
       })
   }
@@ -48,7 +49,38 @@ export class ManageEventPageComponent {
   saveEvent(){
     this.http.put("http://localhost:8080/event/update-event",this.eventTemp).subscribe(data=>{
       console.log(this.eventTemp);
-      alert("Event Updated!!!");
+      this.alertLoginSuccessful();
     })
   }
+
+  alertLoginSuccessful(){
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Event Updated !!!",
+      showConfirmButton: false,
+      timer: 1500
+    });
+  }
+
+  alertDelete(){
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Deleted!",
+          text: "Your file has been deleted.",
+          icon: "success"
+        });
+      }
+    });
+  }
+  
 }

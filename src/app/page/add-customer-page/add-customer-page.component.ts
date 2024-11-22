@@ -3,6 +3,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
+import Swal from 'sweetalert2'; 
 
 
 @Component({
@@ -25,10 +26,19 @@ export class AddCustomerPageComponent {
 
     public addCustomer(){
         this.http.post("http://localhost:8080/customer/add-customer",this.customer).subscribe((data)=>{
-          alert("Customer Added!!");
+          this.alertLoginSuccessful();
         })     
     }
 
+    alertLoginSuccessful(){
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Customer Added !!!",
+        showConfirmButton: false,
+        timer: 1500
+      });
+    }
 
 
 }

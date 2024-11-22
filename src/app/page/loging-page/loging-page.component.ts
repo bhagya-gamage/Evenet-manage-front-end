@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClient} from '@angular/common/http';
 import { Router, RouterLink } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-loging-page',
@@ -63,11 +64,31 @@ onSubmit() {
     if (eventPlannerId) {
       localStorage.setItem("eventplannerid", eventPlannerId); 
     }
-    alert('Login successful.');
+    this.alertLoginSuccessful();
     this.router.navigate(["/app-selection-page"]);
   } else {
-    alert('Invalid email or password. Try again.');
+    this.alertLogUnsuccessful();
   }
 }
+
+alertLoginSuccessful(){
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Login Successful !!!",
+    showConfirmButton: false,
+    timer: 1500
+  });
+}
+
+alertLogUnsuccessful(){
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Something went wrong!"
+  });
+}
+
+
 
 }

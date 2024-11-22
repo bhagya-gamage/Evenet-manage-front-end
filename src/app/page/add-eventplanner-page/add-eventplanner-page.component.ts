@@ -3,6 +3,7 @@ import { FormControl, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router, RouterLink } from '@angular/router';
+import Swal from 'sweetalert2'; 
 
 
 @Component({
@@ -26,7 +27,7 @@ export class AddEventplannerPageComponent {
 
   public addEventplanner(){
     this.http.post("http://localhost:8080/eventplanner/add-eventplanner",this.eventplanner).subscribe((data)=>{
-      alert("Event Planner Added!!");
+      this.alertLoginSuccessful();
     })
     
 }
@@ -41,6 +42,16 @@ export class AddEventplannerPageComponent {
         alert("Event Founded!!!");
       })
       console.log('Searching for:', this.searchTerm);
+  }
+
+  alertLoginSuccessful(){
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Event Planner Added!! !!!",
+      showConfirmButton: false,
+      timer: 1500
+    });
   }
 
 
